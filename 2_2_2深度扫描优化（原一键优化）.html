@@ -1,0 +1,829 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>2.2.2深度扫描优化（原一键优化）</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/2_2_2深度扫描优化（原一键优化）/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/2_2_2深度扫描优化（原一键优化）/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (Dynamic Panel) -->
+      <div id="u283" class="ax_default">
+        <div id="u283_state0" class="panel_state" data-label="State1" style="">
+          <div id="u283_state0_content" class="panel_state_content">
+
+            <!-- Unnamed (Rectangle) -->
+            <div id="u284" class="ax_default paragraph">
+              <div id="u284_div" class=""></div>
+              <div id="u284_text" class="text ">
+                <p><span>深度扫描优化</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u285" class="ax_default label">
+        <div id="u285_div" class=""></div>
+        <div id="u285_text" class="text ">
+          <p><span>需求详述</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u286" class="ax_default paragraph">
+        <div id="u286_div" class=""></div>
+        <div id="u286_text" class="text ">
+          <p><span>用户点击“深度扫描优化”后，电视管家自动进行扫描修复，包括：</span></p><p><span>&#149; 自动释放内存</span></p><p><span>&#149; 扫描并自动清除系统垃圾</span></p><p><span>&#149; 扫描并自动关闭开机自启动项</span></p><p><span>&#149; 扫描并自动清除应用缓存</span></p><p><span>&#149; 扫描并自动清除多余安装包</span></p><p><span>&#149; 扫描DNS并自动修复</span></p><p><span>&#149; 扫描应用数据，提供手动清理入口（不自动清理）</span></p><p><span>&#149; 检测是否有超过60天未使用的应用，提供应用卸载入口（不自动卸载）</span></p><p><span>&#149; 扫描应用中的病毒、恶意代码、广告，提供手动清理入口（不自动清理）</span></p><p><span>界面体现百度安全字样</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u287" class="ax_default label">
+        <div id="u287_div" class=""></div>
+        <div id="u287_text" class="text ">
+          <p><span>界面原型</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u288" class="ax_default heading_3">
+        <div id="u288_div" class=""></div>
+        <div id="u288_text" class="text ">
+          <p><span>优化过程</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u289" class="ax_default label">
+        <div id="u289_div" class=""></div>
+        <div id="u289_text" class="text ">
+          <p><span>① 优化过程包括扫描和自动修复，优化过程展示百分比进度</span></p><p><span>② 下方实时展示当前扫描及优化的动作</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u290" class="ax_default label">
+        <div id="u290_div" class=""></div>
+        <div id="u290_text" class="text ">
+          <p><span>备注：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u291" class="ax_default line">
+        <img id="u291_img" class="img " src="images/2_1_1开机自动优化/u90.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u292" class="ax_default label">
+        <div id="u292_div" class=""></div>
+        <div id="u292_text" class="text ">
+          <p><span>前置条件：用户在首页点击“深度扫描优化”</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Table) -->
+      <div id="u293" class="ax_default">
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u294" class="ax_default table_cell">
+          <img id="u294_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u294.png"/>
+          <div id="u294_text" class="text ">
+            <p><span>动作</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u295" class="ax_default table_cell">
+          <img id="u295_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u295.png"/>
+          <div id="u295_text" class="text ">
+            <p><span>显示文案</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u296" class="ax_default table_cell">
+          <img id="u296_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u296.png"/>
+          <div id="u296_text" class="text ">
+            <p><span>备注</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u297" class="ax_default table_cell">
+          <img id="u297_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u297.png"/>
+          <div id="u297_text" class="text ">
+            <p><span>释放内存</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u298" class="ax_default table_cell">
+          <img id="u298_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u298.png"/>
+          <div id="u298_text" class="text ">
+            <p><span>释放内存… </span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u299" class="ax_default table_cell">
+          <img id="u299_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u299.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u300" class="ax_default table_cell">
+          <img id="u300_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u300.png"/>
+          <div id="u300_text" class="text ">
+            <p><span>扫描系统垃圾</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u301" class="ax_default table_cell">
+          <img id="u301_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u301.png"/>
+          <div id="u301_text" class="text ">
+            <p><span>扫描系统垃圾 N KB/MB/GB</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u302" class="ax_default table_cell">
+          <img id="u302_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u302.png"/>
+          <div id="u302_text" class="text ">
+            <p><span>N 根据扫描情况动态增大（为0时不显示）</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u303" class="ax_default table_cell">
+          <img id="u303_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u300.png"/>
+          <div id="u303_text" class="text ">
+            <p><span>清除系统垃圾</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u304" class="ax_default table_cell">
+          <img id="u304_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u301.png"/>
+          <div id="u304_text" class="text ">
+            <p><span>清除系统垃圾 N KB/MB/GB</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u305" class="ax_default table_cell">
+          <img id="u305_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u302.png"/>
+          <div id="u305_text" class="text ">
+            <p><span>N 根据清理情况动态减少</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u306" class="ax_default table_cell">
+          <img id="u306_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u300.png"/>
+          <div id="u306_text" class="text ">
+            <p><span>扫描开机自启动项</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u307" class="ax_default table_cell">
+          <img id="u307_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u301.png"/>
+          <div id="u307_text" class="text ">
+            <p><span>扫描开机自启动项 N</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u308" class="ax_default table_cell">
+          <img id="u308_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u302.png"/>
+          <div id="u308_text" class="text ">
+            <p><span>N 根据扫描情况动态增大（为0时不显示）</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u309" class="ax_default table_cell">
+          <img id="u309_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u300.png"/>
+          <div id="u309_text" class="text ">
+            <p><span>关闭开机自启动项</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u310" class="ax_default table_cell">
+          <img id="u310_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u301.png"/>
+          <div id="u310_text" class="text ">
+            <p><span>关闭开机自启动项 N</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u311" class="ax_default table_cell">
+          <img id="u311_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u302.png"/>
+          <div id="u311_text" class="text ">
+            <p><span>N 根据处理情况动态减少</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u312" class="ax_default table_cell">
+          <img id="u312_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u300.png"/>
+          <div id="u312_text" class="text ">
+            <p><span>扫描应用缓存</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u313" class="ax_default table_cell">
+          <img id="u313_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u301.png"/>
+          <div id="u313_text" class="text ">
+            <p><span>扫描应用缓存 N KB/MB/GB</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u314" class="ax_default table_cell">
+          <img id="u314_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u302.png"/>
+          <div id="u314_text" class="text ">
+            <p><span>N 根据扫描情况动态增大（为0时不显示）</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u315" class="ax_default table_cell">
+          <img id="u315_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u300.png"/>
+          <div id="u315_text" class="text ">
+            <p><span>清除应用缓存</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u316" class="ax_default table_cell">
+          <img id="u316_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u301.png"/>
+          <div id="u316_text" class="text ">
+            <p><span>清除应用缓存 N KB/MB/GB</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u317" class="ax_default table_cell">
+          <img id="u317_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u302.png"/>
+          <div id="u317_text" class="text ">
+            <p><span>N 根据清理情况动态减少</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u318" class="ax_default table_cell">
+          <img id="u318_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u300.png"/>
+          <div id="u318_text" class="text ">
+            <p><span>扫描多余安装包</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u319" class="ax_default table_cell">
+          <img id="u319_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u301.png"/>
+          <div id="u319_text" class="text ">
+            <p><span>扫描多余安装包 N KB/MB/GB</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u320" class="ax_default table_cell">
+          <img id="u320_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u302.png"/>
+          <div id="u320_text" class="text ">
+            <p><span>N 根据扫描情况动态增大（为0时不显示）</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u321" class="ax_default table_cell">
+          <img id="u321_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u300.png"/>
+          <div id="u321_text" class="text ">
+            <p><span>清除多余安装包</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u322" class="ax_default table_cell">
+          <img id="u322_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u301.png"/>
+          <div id="u322_text" class="text ">
+            <p><span>清除多余安装包 N KB/MB/GB</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u323" class="ax_default table_cell">
+          <img id="u323_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u302.png"/>
+          <div id="u323_text" class="text ">
+            <p><span>N 根据处理情况动态减少</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u324" class="ax_default table_cell">
+          <img id="u324_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u297.png"/>
+          <div id="u324_text" class="text ">
+            <p><span>扫描DNS状态</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u325" class="ax_default table_cell">
+          <img id="u325_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u298.png"/>
+          <div id="u325_text" class="text ">
+            <p><span>扫码网络安全状态…</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u326" class="ax_default table_cell">
+          <img id="u326_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u299.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u327" class="ax_default table_cell">
+          <img id="u327_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u297.png"/>
+          <div id="u327_text" class="text ">
+            <p><span>修复DNS</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u328" class="ax_default table_cell">
+          <img id="u328_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u298.png"/>
+          <div id="u328_text" class="text ">
+            <p><span>修复网络安全问题</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u329" class="ax_default table_cell">
+          <img id="u329_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u299.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u330" class="ax_default table_cell">
+          <img id="u330_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u300.png"/>
+          <div id="u330_text" class="text ">
+            <p><span>扫描应用数据</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u331" class="ax_default table_cell">
+          <img id="u331_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u301.png"/>
+          <div id="u331_text" class="text ">
+            <p><span>扫描应用数据 N KB/MB/GB</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u332" class="ax_default table_cell">
+          <img id="u332_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u302.png"/>
+          <div id="u332_text" class="text ">
+            <p><span>N 根据扫描情况动态增大（为0时不显示）</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u333" class="ax_default table_cell">
+          <img id="u333_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u300.png"/>
+          <div id="u333_text" class="text ">
+            <p><span>检测超60天未使用的应用</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u334" class="ax_default table_cell">
+          <img id="u334_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u301.png"/>
+          <div id="u334_text" class="text ">
+            <p><span>检测其他优化文件</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u335" class="ax_default table_cell">
+          <img id="u335_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u302.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u336" class="ax_default table_cell">
+          <img id="u336_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u336.png"/>
+          <div id="u336_text" class="text ">
+            <p><span>扫描应用中病毒、恶意代码、广告</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u337" class="ax_default table_cell">
+          <img id="u337_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u337.png"/>
+          <div id="u337_text" class="text ">
+            <p><span>应用安全扫描 （N/M）</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u338" class="ax_default table_cell">
+          <img id="u338_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u338.png"/>
+          <div id="u338_text" class="text ">
+            <p><span>M为总应用数量，N为扫描过的应用数量</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u339" class="ax_default label">
+        <div id="u339_div" class=""></div>
+        <div id="u339_text" class="text ">
+          <p><span>③ 优化过程中按【返回键】，弹出二次确认弹窗，确认后，终止优化过程。回到电视管家首页</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u340" class="ax_default box_1">
+        <div id="u340_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u341" class="ax_default label">
+        <div id="u341_div" class=""></div>
+        <div id="u341_text" class="text ">
+          <p><span>确定要退出优化过程吗？</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u342" class="ax_default box_1">
+        <div id="u342_div" class=""></div>
+        <div id="u342_text" class="text ">
+          <p><span>确定</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u343" class="ax_default box_1">
+        <div id="u343_div" class=""></div>
+        <div id="u343_text" class="text ">
+          <p><span>取消</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u344" class="ax_default label">
+        <div id="u344_div" class=""></div>
+        <div id="u344_text" class="text ">
+          <p><span style="color:#666666;">优化动作和显示文案一览表</span><span style="color:#FF0000;">（只是建议，非严格要求）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u345" class="ax_default heading_3">
+        <div id="u345_div" class=""></div>
+        <div id="u345_text" class="text ">
+          <p><span>全部优化完成，无需手动优化</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u346" class="ax_default label">
+        <div id="u346_div" class=""></div>
+        <div id="u346_text" class="text ">
+          <p><span>① 显示内容包括释放的内存、清除的垃圾文件、优化的开机启动项、DNS状态、应用内广告/恶意代码/病毒</span></p><p><span>② “释放内存”：展示最终释放的内存大小，取整数，单位根据实际情况使用MB/GB</span></p><p><span>③ “清除垃圾文件”：包括清除的系统垃圾、安装包、应用缓存，文件大小精确到小数点后1位，单位根据实际大小使用KB、MB、GB</span></p><p><span>④ “优化开机启动项”：展示自动关闭的开机优化项数量</span></p><p><span>⑤ “DNS状态”：若无异常，显示“正常”；若有异常则自动修复后显示“已修复”</span></p><p><span>⑥ “应用内广告、病毒或恶意代码”：若检测应用安全，显示“无”；若检测到有广告、病毒、恶意代码，则提供手动处理入口</span></p><p><span>⑦ 用户点击“完成”或者按【返回键】后，回到电视管家首页，</span><span>“深度扫描优化”按钮改为“重新优化”</span></p><p><span><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u347" class="ax_default label">
+        <div id="u347_div" class=""></div>
+        <div id="u347_text" class="text ">
+          <p><span>备注：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u348" class="ax_default line">
+        <img id="u348_img" class="img " src="images/2_1_1开机自动优化/u90.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u349" class="ax_default label">
+        <div id="u349_div" class=""></div>
+        <div id="u349_text" class="text ">
+          <p><span>前置条件：“一键优化”优化进度达到100%，且未扫描到任何需要手动优化的项目（应用数据、超过60天未使用的应用、病毒/恶意代码/广告）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u350" class="ax_default label">
+        <div id="u350_div" class=""></div>
+        <div id="u350_text" class="text ">
+          <p><span>退出电视管家后，“重新优化”状态不再保留</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u351" class="ax_default label">
+        <div id="u351_div" class=""></div>
+        <div id="u351_text" class="text ">
+          <p><span>“重新优化”按钮和原先“深度扫描优化”按钮功能相同</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u352" class="ax_default heading_3">
+        <div id="u352_div" class=""></div>
+        <div id="u352_text" class="text ">
+          <p><span>全部优化完成，但需要手动处理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u353" class="ax_default label">
+        <div id="u353_div" class=""></div>
+        <div id="u353_text" class="text ">
+          <p><span>前置条件：“一键优化”优化进度达到100%，且扫描到需要手动优化的项目（应用数据、超过60天未使用的应用、病毒/恶意代码/广告）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u354" class="ax_default label">
+        <div id="u354_div" class=""></div>
+        <div id="u354_text" class="text ">
+          <p><span>①&nbsp; 若无应用数据，则不显示应用数据这条项目；若无超过60天未使用的应用，也不显示；若无广告、病毒、恶意代码，则显示在已自动优化的项目中</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u355" class="ax_default label">
+        <div id="u355_div" class=""></div>
+        <div id="u355_text" class="text ">
+          <p><span>备注：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u356" class="ax_default line">
+        <img id="u356_img" class="img " src="images/2_1_1开机自动优化/u90.png"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u357" class="ax_default image">
+        <img id="u357_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u357.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u358" class="ax_default label">
+        <div id="u358_div" class=""></div>
+        <div id="u358_text" class="text ">
+          <p><span style="color:#666666;">③&nbsp; 去清理应用数据，跳转到空间清理-应用数据详情页</span><span style="text-decoration:underline;color:#FF0000;">【点击查看】</span></p><p><span>④ </span><span style="color:#666666;"> 卸载超过60天的应用，跳转到空间清理-应用卸载页</span><span style="text-decoration:underline;color:#FF0000;">【点击查看】</span></p><p><span>⑤ </span><span style="color:#666666;"> 风险应用部分</span><span style="color:#FF0000;">若检查出的应用有高风险或恶意应用，使用红色图标；若检测出的应用全部为低风险，使用橙色图标</span></p><p><span style="color:#666666;">处理</span><span style="color:#FF0000;">风险应用</span><span style="color:#666666;">，弹出</span></p><p><span style="text-decoration:underline;color:#FF0000;"><br></span></p><p><span style="text-decoration:underline;color:#FF0000;"><br></span></p><p><span style="text-decoration:underline;color:#FF0000;"><br></span></p><p><span style="text-decoration:underline;color:#FF0000;"><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u359" class="ax_default label">
+        <div id="u359_div" class=""></div>
+        <div id="u359_text" class="text ">
+          <p><span>&#149; 应用卸载状态如下：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u360" class="ax_default label">
+        <div id="u360_div" class=""></div>
+        <div id="u360_text" class="text ">
+          <p><span>【卸载前】</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u361" class="ax_default image">
+        <img id="u361_img" class="img " src="images/2_1_1开机自动优化/u96.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u362" class="ax_default label">
+        <div id="u362_div" class=""></div>
+        <div id="u362_text" class="text ">
+          <p><span>【卸载过程中】</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u363" class="ax_default label">
+        <div id="u363_div" class=""></div>
+        <div id="u363_text" class="text ">
+          <p><span style="color:#666666;">&#149;点击“全部卸载”后，应用开始安装列表顺序进行卸载，单条应用卸载完成后，不出现Toast提示，全部卸载完成后统一提示“风险项目已清除”</span></p><p><span style="color:#666666;">&#149; 全部卸载过程中，“全部卸载”和“忽略”按钮隐藏，所有应用卸载完成后，</span><span style="color:#FF0000;">弹窗消失</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u364" class="ax_default label">
+        <div id="u364_div" class=""></div>
+        <div id="u364_text" class="text ">
+          <p><span>&#149; 焦点默认在“全部卸载”按钮，用户也可对单个应用进行卸载</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u365" class="ax_default label">
+        <div id="u365_div" class=""></div>
+        <div id="u365_text" class="text ">
+          <p><span style="color:#666666;">&#149; </span><span style="color:#FF0000;">若风险级别为高风险或恶意应用，使用红色图标；若风险级别为低风险，使用橙色图标</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u366" class="ax_default label">
+        <div id="u366_div" class=""></div>
+        <div id="u366_text" class="text ">
+          <p><span>⑥&nbsp; 从手动处理项A的处理页面，返回到优化完成页面时，将刷新手动处理项A的数据，并toast提示“正在更新”</span></p><p><span>⑦&nbsp; 若将手动处理项A处理完毕后，则手动处理项A显示在已优化的项目中；若将所有手动处理项处理完毕后，底部页面底部显示“完成”按钮，点击返回电视管家首页</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u367" class="ax_default label">
+        <div id="u367_div" class=""></div>
+        <div id="u367_text" class="text ">
+          <p><span style="color:#666666;">②&nbsp; 若用户按【返回键】，则回到电视管家首页，</span><span style="color:#FF0000;">“深度扫描优化”按钮改为“手动处理优化项”</span><span style="color:#666666;">，后端保留当前优化状态。</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u368" class="ax_default label">
+        <div id="u368_div" class=""></div>
+        <div id="u368_text" class="text ">
+          <p><span>点击“继续优化”回到原先优化完成页面，可继续进行手动优化</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Hot Spot) -->
+      <div id="u369" class="ax_default">
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u370" class="ax_default label">
+        <div id="u370_div" class=""></div>
+        <div id="u370_text" class="text ">
+          <p><span>退出电视管家后，“继续优化”状态不再保留</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u371" class="ax_default image">
+        <img id="u371_img" class="img " src="images/2_1_1开机自动优化/u102.png"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u372" class="ax_default image">
+        <img id="u372_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u372.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u373" class="ax_default label">
+        <div id="u373_div" class=""></div>
+        <div id="u373_text" class="text ">
+          <p><span>【卸载完成】该条目消失，下方内容上移，并Toast 提示&quot;XX卸载成功&quot;</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u374" class="ax_default line">
+        <img id="u374_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u374.png"/>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u375" class="ax_default line">
+        <img id="u375_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u375.png"/>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u376" class="ax_default line">
+        <img id="u376_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u374.png"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u377" class="ax_default image">
+        <img id="u377_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u377.png"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u378" class="ax_default image">
+        <img id="u378_img" class="img " src="images/2_2_1界面主页/u281.png"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u379" class="ax_default image">
+        <img id="u379_img" class="img " src="images/2_2_1界面主页/u282.png"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u380" class="ax_default image">
+        <img id="u380_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u380.png"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u381" class="ax_default image">
+        <img id="u381_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u381.png"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u382" class="ax_default image">
+        <img id="u382_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u382.png"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u383" class="ax_default image">
+        <img id="u383_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u383.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u384" class="ax_default paragraph">
+        <div id="u384_div" class=""></div>
+        <div id="u384_text" class="text ">
+          <p><span>item标题“应用内广告、病毒或恶意代码”改为“风险应用”</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u385" class="ax_default paragraph">
+        <div id="u385_div" class=""></div>
+        <div id="u385_text" class="text ">
+          <p><span>item标题“应用内广告、病毒或恶意代码”改为“风险应用”</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u386" class="ax_default paragraph">
+        <div id="u386_div" class=""></div>
+        <div id="u386_text" class="text ">
+          <p><span>应用问题item标题改为：xxxx（应用名称）含恶意扣费（取其中一个风险类型）等风险</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u387" class="ax_default paragraph">
+        <div id="u387_div" class=""></div>
+        <div id="u387_text" class="text ">
+          <p><span>item标题“清除应用内广告、病毒或恶意代码”改为“卸载风险应用”</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u388" class="ax_default line">
+        <img id="u388_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u374.png"/>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u389" class="ax_default line">
+        <img id="u389_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u374.png"/>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u390" class="ax_default line">
+        <img id="u390_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u374.png"/>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u391" class="ax_default line">
+        <img id="u391_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u374.png"/>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u392" class="ax_default line">
+        <img id="u392_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u374.png"/>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u393" class="ax_default line">
+        <img id="u393_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u374.png"/>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u394" class="ax_default line">
+        <img id="u394_img" class="img " src="images/2_2_2深度扫描优化（原一键优化）/u374.png"/>
+      </div>
+    </div>
+  </body>
+</html>

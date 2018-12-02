@@ -1,0 +1,570 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>2.1.1开机自动优化</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/2_1_1开机自动优化/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/2_1_1开机自动优化/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u58" class="ax_default label">
+        <div id="u58_div" class=""></div>
+        <div id="u58_text" class="text ">
+          <p><span>需求详述</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u59" class="ax_default paragraph">
+        <div id="u59_div" class=""></div>
+        <div id="u59_text" class="text ">
+          <p><span style="color:#666666;">在用户开机后，自动进行优化处理，优化内容包括：</span></p><p><span style="color:#666666;">&#149; 关闭开机自动项</span></p><p><span style="color:#666666;">&#149; 进行DNS检测和修复</span></p><p><span style="color:#666666;">&#149; 进行应用安全扫描</span><span style="color:#CCCCCC;">（若有恶意应用，则等重回主页时再通过消息盒子提示）</span></p><p><span style="color:#666666;">&#149;</span><span style="color:#CCCCCC;"> 释放内存</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Diamond) -->
+      <div id="u60" class="ax_default flow_shape">
+        <img id="u60_img" class="img " src="images/2_1_1开机自动优化/u60.png"/>
+        <div id="u60_text" class="text ">
+          <p><span>是否有开机启动项</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u61" class="ax_default flow_shape">
+        <div id="u61_div" class=""></div>
+        <div id="u61_text" class="text ">
+          <p><span>开机进入主界面后</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u62" class="ax_default flow_shape">
+        <div id="u62_div" class=""></div>
+        <div id="u62_text" class="text ">
+          <p><span>检测开机启动项</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u63" class="ax_default connector">
+        <img id="u63_seg0" class="img " src="images/2_1_1开机自动优化/u63_seg0.png" alt="u63_seg0"/>
+        <img id="u63_seg1" class="img " src="images/2_1_1开机自动优化/u63_seg1.png" alt="u63_seg1"/>
+        <div id="u63_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u64" class="ax_default flow_shape">
+        <div id="u64_div" class=""></div>
+        <div id="u64_text" class="text ">
+          <p><span>后端关闭开机启动项</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u65" class="ax_default connector">
+        <img id="u65_seg0" class="img " src="images/2_1_1开机自动优化/u65_seg0.png" alt="u65_seg0"/>
+        <img id="u65_seg1" class="img " src="images/2_1_1开机自动优化/u63_seg1.png" alt="u65_seg1"/>
+        <div id="u65_text" class="text ">
+          <p><span>是</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u66" class="ax_default flow_shape">
+        <div id="u66_div" class=""></div>
+        <div id="u66_text" class="text ">
+          <p><span>检测DNS状态</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u67" class="ax_default connector">
+        <img id="u67_seg0" class="img " src="images/2_1_1开机自动优化/u67_seg0.png" alt="u67_seg0"/>
+        <img id="u67_seg1" class="img " src="images/2_1_1开机自动优化/u63_seg1.png" alt="u67_seg1"/>
+        <div id="u67_text" class="text ">
+          <p><span>是</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Diamond) -->
+      <div id="u68" class="ax_default flow_shape">
+        <img id="u68_img" class="img " src="images/2_1_1开机自动优化/u60.png"/>
+        <div id="u68_text" class="text ">
+          <p><span>DNS是否异常</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u69" class="ax_default connector">
+        <img id="u69_seg0" class="img " src="images/2_1_1开机自动优化/u69_seg0.png" alt="u69_seg0"/>
+        <img id="u69_seg1" class="img " src="images/2_1_1开机自动优化/u69_seg1.png" alt="u69_seg1"/>
+        <img id="u69_seg2" class="img " src="images/2_1_1开机自动优化/u69_seg2.png" alt="u69_seg2"/>
+        <img id="u69_seg3" class="img " src="images/2_1_1开机自动优化/u63_seg1.png" alt="u69_seg3"/>
+        <div id="u69_text" class="text ">
+          <p><span>是</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u70" class="ax_default flow_shape">
+        <div id="u70_div" class=""></div>
+        <div id="u70_text" class="text ">
+          <p><span>后端自动修复</span></p><p><span>前端提示“正在修复”</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Diamond) -->
+      <div id="u71" class="ax_default flow_shape">
+        <img id="u71_img" class="img " src="images/2_1_1开机自动优化/u71.png"/>
+        <div id="u71_text" class="text ">
+          <p><span>应用中有病毒或恶意代码</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u72" class="ax_default flow_shape">
+        <div id="u72_div" class=""></div>
+        <div id="u72_text" class="text ">
+          <p><span>应用安全扫描</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u73" class="ax_default connector">
+        <img id="u73_seg0" class="img " src="images/2_1_1开机自动优化/u63_seg0.png" alt="u73_seg0"/>
+        <img id="u73_seg1" class="img " src="images/2_1_1开机自动优化/u63_seg1.png" alt="u73_seg1"/>
+        <div id="u73_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u74" class="ax_default connector">
+        <img id="u74_seg0" class="img " src="images/2_1_1开机自动优化/u74_seg0.png" alt="u74_seg0"/>
+        <img id="u74_seg1" class="img " src="images/2_1_1开机自动优化/u63_seg1.png" alt="u74_seg1"/>
+        <div id="u74_text" class="text ">
+          <p><span>是</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u75" class="ax_default flow_shape">
+        <div id="u75_div" class=""></div>
+        <div id="u75_text" class="text ">
+          <p><span>消息盒子提示有病毒/恶意代码</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u76" class="ax_default connector">
+        <img id="u76_seg0" class="img " src="images/2_1_1开机自动优化/u76_seg0.png" alt="u76_seg0"/>
+        <img id="u76_seg1" class="img " src="images/2_1_1开机自动优化/u76_seg1.png" alt="u76_seg1"/>
+        <img id="u76_seg2" class="img " src="images/2_1_1开机自动优化/u63_seg1.png" alt="u76_seg2"/>
+        <div id="u76_text" class="text ">
+          <p><span>否</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u77" class="ax_default flow_shape">
+        <div id="u77_div" class=""></div>
+        <div id="u77_text" class="text ">
+          <p><span>不处理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Diamond) -->
+      <div id="u78" class="ax_default flow_shape">
+        <img id="u78_img" class="img " src="images/2_1_1开机自动优化/u60.png"/>
+        <div id="u78_text" class="text ">
+          <p><span>是否已连网</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u79" class="ax_default connector">
+        <img id="u79_seg0" class="img " src="images/2_1_1开机自动优化/u79_seg0.png" alt="u79_seg0"/>
+        <img id="u79_seg1" class="img " src="images/2_1_1开机自动优化/u79_seg1.png" alt="u79_seg1"/>
+        <div id="u79_text" class="text ">
+          <p><span>是</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u80" class="ax_default connector">
+        <img id="u80_seg0" class="img " src="images/2_1_1开机自动优化/u80_seg0.png" alt="u80_seg0"/>
+        <img id="u80_seg1" class="img " src="images/2_1_1开机自动优化/u80_seg1.png" alt="u80_seg1"/>
+        <img id="u80_seg2" class="img " src="images/2_1_1开机自动优化/u63_seg1.png" alt="u80_seg2"/>
+        <div id="u80_text" class="text ">
+          <p><span>否</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u81" class="ax_default flow_shape">
+        <div id="u81_div" class=""></div>
+        <div id="u81_text" class="text ">
+          <p><span>提示&quot;当前网络安全&quot;</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u82" class="ax_default connector">
+        <img id="u82_seg0" class="img " src="images/2_1_1开机自动优化/u82_seg0.png" alt="u82_seg0"/>
+        <img id="u82_seg1" class="img " src="images/2_1_1开机自动优化/u82_seg1.png" alt="u82_seg1"/>
+        <img id="u82_seg2" class="img " src="images/2_1_1开机自动优化/u63_seg1.png" alt="u82_seg2"/>
+        <div id="u82_text" class="text ">
+          <p><span>否</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u83" class="ax_default flow_shape">
+        <div id="u83_div" class=""></div>
+        <div id="u83_text" class="text ">
+          <p><span>不处理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u84" class="ax_default label">
+        <div id="u84_div" class=""></div>
+        <div id="u84_text" class="text ">
+          <p><span>流程图</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u85" class="ax_default label">
+        <div id="u85_div" class=""></div>
+        <div id="u85_text" class="text ">
+          <p><span>界面原型</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u86" class="ax_default paragraph">
+        <div id="u86_div" class=""></div>
+        <div id="u86_text" class="text ">
+          <p><span>检测到恶意代码/病毒时的提醒</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u87" class="ax_default heading_3">
+        <div id="u87_div" class=""></div>
+        <div id="u87_text" class="text ">
+          <p><span>消息盒子提醒</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u88" class="ax_default heading_3">
+        <div id="u88_div" class=""></div>
+        <div id="u88_text" class="text ">
+          <p><span>查看详情</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u89" class="ax_default label">
+        <div id="u89_div" class=""></div>
+        <div id="u89_text" class="text ">
+          <p><span>备注：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u90" class="ax_default line">
+        <img id="u90_img" class="img " src="images/2_1_1开机自动优化/u90.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u91" class="ax_default label">
+        <div id="u91_div" class=""></div>
+        <div id="u91_text" class="text ">
+          <p><span style="color:#666666;">① 当检测到应用中含有</span><span style="color:#FF0000;">高风险应用及恶意应用</span><span style="color:#666666;">，使用消息盒子提示</span></p><p><span style="color:#666666;">② 此时按确定键可“查看详情”</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u92" class="ax_default label">
+        <div id="u92_div" class=""></div>
+        <div id="u92_text" class="text ">
+          <p><span>备注：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u93" class="ax_default line">
+        <img id="u93_img" class="img " src="images/2_1_1开机自动优化/u90.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u94" class="ax_default label">
+        <div id="u94_div" class=""></div>
+        <div id="u94_text" class="text ">
+          <p><span>② 应用卸载状态如下：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u95" class="ax_default label">
+        <div id="u95_div" class=""></div>
+        <div id="u95_text" class="text ">
+          <p><span>【卸载前】</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u96" class="ax_default image">
+        <img id="u96_img" class="img " src="images/2_1_1开机自动优化/u96.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u97" class="ax_default label">
+        <div id="u97_div" class=""></div>
+        <div id="u97_text" class="text ">
+          <p><span>【卸载过程中】</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u98" class="ax_default label">
+        <div id="u98_div" class=""></div>
+        <div id="u98_text" class="text ">
+          <p><span style="color:#666666;">③ 点击“全部卸载”后，应用开始安装列表顺序进行卸载，单条应用卸载完成后，不出现Toast提示，全部卸载完成后统一提示</span><span style="color:#FF0000;">“风险项目已清除”</span></p><p><span style="color:#666666;">④ 全部卸载过程中，“全部卸载”和“忽略”按钮隐藏，所有应用卸载完成后，</span></p><p><span style="color:#FF0000;">弹窗消失</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u99" class="ax_default label">
+        <div id="u99_div" class=""></div>
+        <div id="u99_text" class="text ">
+          <p><span>① 焦点默认在“全部卸载”按钮，用户也可对单个应用进行卸载</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Dynamic Panel) -->
+      <div id="u100" class="ax_default">
+        <div id="u100_state0" class="panel_state" data-label="State1" style="">
+          <div id="u100_state0_content" class="panel_state_content">
+
+            <!-- Unnamed (Rectangle) -->
+            <div id="u101" class="ax_default paragraph">
+              <div id="u101_div" class=""></div>
+              <div id="u101_text" class="text ">
+                <p><span>开机自动优化</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u102" class="ax_default image">
+        <img id="u102_img" class="img " src="images/2_1_1开机自动优化/u102.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u103" class="ax_default box_3">
+        <div id="u103_div" class=""></div>
+        <div id="u103_text" class="text ">
+          <p><span>POER管家卸载成功</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u104" class="ax_default label">
+        <div id="u104_div" class=""></div>
+        <div id="u104_text" class="text ">
+          <p><span>【卸载完成】该条目消失，下方内容上移，并Toast 提示&quot;XX卸载成功&quot;</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u105" class="ax_default paragraph">
+        <div id="u105_div" class=""></div>
+        <div id="u105_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;color:#000000;">DNS状态提醒及修复</span><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:600;">（待补充异常情况方案）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u106" class="ax_default label">
+        <div id="u106_div" class=""></div>
+        <div id="u106_text" class="text ">
+          <p><span>① 连接网络后，后端自动检测网络安全状况</span></p><p><span>② 检测出结果后，提供反馈</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u107" class="ax_default label">
+        <div id="u107_div" class=""></div>
+        <div id="u107_text" class="text ">
+          <p><span>备注：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u108" class="ax_default line">
+        <img id="u108_img" class="img " src="images/2_1_1开机自动优化/u90.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u109" class="ax_default label">
+        <div id="u109_div" class=""></div>
+        <div id="u109_text" class="text ">
+          <p><span>【检测安全】提示显示2s后消失</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u110" class="ax_default label">
+        <div id="u110_div" class=""></div>
+        <div id="u110_text" class="text ">
+          <p><span>【检测到威胁】检测到威胁后提示正在修复，后端自动完成修复后，提示网络安全</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u111" class="ax_default connector">
+        <img id="u111_seg0" class="img " src="images/2_1_1开机自动优化/u111_seg0.png" alt="u111_seg0"/>
+        <img id="u111_seg1" class="img " src="images/2_1_1开机自动优化/u111_seg1.png" alt="u111_seg1"/>
+        <img id="u111_seg2" class="img " src="images/2_1_1开机自动优化/u111_seg2.png" alt="u111_seg2"/>
+        <div id="u111_text" class="text ">
+          <p><span>修复完成</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u112" class="ax_default connector">
+        <img id="u112_seg0" class="img " src="images/2_1_1开机自动优化/u112_seg0.png" alt="u112_seg0"/>
+        <img id="u112_seg1" class="img " src="images/2_1_1开机自动优化/u112_seg1.png" alt="u112_seg1"/>
+        <img id="u112_seg2" class="img " src="images/2_1_1开机自动优化/u112_seg2.png" alt="u112_seg2"/>
+        <img id="u112_seg3" class="img " src="images/2_1_1开机自动优化/u63_seg1.png" alt="u112_seg3"/>
+        <div id="u112_text" class="text ">
+          <p><span>否</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u113" class="ax_default flow_shape">
+        <div id="u113_div" class=""></div>
+        <div id="u113_text" class="text ">
+          <p><span>跳过DNS检测</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u114" class="ax_default connector">
+        <img id="u114_seg0" class="img " src="images/2_1_1开机自动优化/u114_seg0.png" alt="u114_seg0"/>
+        <img id="u114_seg1" class="img " src="images/2_1_1开机自动优化/u114_seg1.png" alt="u114_seg1"/>
+        <img id="u114_seg2" class="img " src="images/2_1_1开机自动优化/u114_seg2.png" alt="u114_seg2"/>
+        <img id="u114_seg3" class="img " src="images/2_1_1开机自动优化/u114_seg3.png" alt="u114_seg3"/>
+        <img id="u114_seg4" class="img " src="images/2_1_1开机自动优化/u63_seg1.png" alt="u114_seg4"/>
+        <div id="u114_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u115" class="ax_default connector">
+        <img id="u115_seg0" class="img " src="images/2_1_1开机自动优化/u114_seg0.png" alt="u115_seg0"/>
+        <img id="u115_seg1" class="img " src="images/2_1_1开机自动优化/u114_seg1.png" alt="u115_seg1"/>
+        <img id="u115_seg2" class="img " src="images/2_1_1开机自动优化/u115_seg2.png" alt="u115_seg2"/>
+        <img id="u115_seg3" class="img " src="images/2_1_1开机自动优化/u115_seg3.png" alt="u115_seg3"/>
+        <img id="u115_seg4" class="img " src="images/2_1_1开机自动优化/u63_seg1.png" alt="u115_seg4"/>
+        <div id="u115_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u116" class="ax_default connector">
+        <img id="u116_seg0" class="img " src="images/2_1_1开机自动优化/u114_seg0.png" alt="u116_seg0"/>
+        <img id="u116_seg1" class="img " src="images/2_1_1开机自动优化/u116_seg1.png" alt="u116_seg1"/>
+        <img id="u116_seg2" class="img " src="images/2_1_1开机自动优化/u116_seg2.png" alt="u116_seg2"/>
+        <img id="u116_seg3" class="img " src="images/2_1_1开机自动优化/u116_seg3.png" alt="u116_seg3"/>
+        <img id="u116_seg4" class="img " src="images/2_1_1开机自动优化/u63_seg1.png" alt="u116_seg4"/>
+        <div id="u116_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u117" class="ax_default line">
+        <img id="u117_img" class="img " src="images/2_1_1开机自动优化/u117.png"/>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u118" class="ax_default line">
+        <img id="u118_img" class="img " src="images/2_1_1开机自动优化/u118.png"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u119" class="ax_default image">
+        <img id="u119_img" class="img " src="images/2_1_1开机自动优化/u119.png"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u120" class="ax_default image">
+        <img id="u120_img" class="img " src="images/2_1_1开机自动优化/u120.png"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u121" class="ax_default image">
+        <img id="u121_img" class="img " src="images/2_1_1开机自动优化/u120.png"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u122" class="ax_default image">
+        <img id="u122_img" class="img " src="images/2_1_1开机自动优化/u122.jpg"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u123" class="ax_default paragraph">
+        <div id="u123_div" class=""></div>
+        <div id="u123_text" class="text ">
+          <p><span>应用问题item标题改为：xxxx（应用名称）含恶意扣费（取其中一个风险类型）等风险</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u124" class="ax_default image">
+        <img id="u124_img" class="img " src="images/2_1_1开机自动优化/u124.png"/>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u125" class="ax_default image">
+        <img id="u125_img" class="img " src="images/2_1_1开机自动优化/u125.jpg"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u126" class="ax_default box_2">
+        <div id="u126_div" class=""></div>
+      </div>
+    </div>
+  </body>
+</html>
